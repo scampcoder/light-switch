@@ -7,3 +7,5 @@ function bulbSwitch() {
     lightbulb.src = "lighton.jpeg";
   }
 }
+
+lightbulb.onclick = bulbSwitch();
