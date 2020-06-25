@@ -9,9 +9,19 @@
   <body>
 
     <h1>Turn the light on and off by clicking the bulb!</h1>
-    <img id="lightbulb" src="img/lightoff.jpg" alt="lightbulb">
+    <img id="lightbulb" src="lightoff.jpg" onclick="bulbSwitch()" alt="lightbulb">
 
-    <script type="text/javascript" src="script.js"></script>
+    <script type="text/javascript">
+      function bulbSwitch() {
+        var bulb = document.getElementById('lightbulb');
+        if (bulb.src.match("lighton")) {
+          bulb.src = "lightoff.jpg";
+        } else {
+          bulb.src = "lighton.jpg";
+        }
+      }
+    </script>
+    <!--<script type="text/javascript" src="script.js"></script>-->
 
   </body>
 </html>
