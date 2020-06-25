@@ -1,10 +1,10 @@
 let lightbulb = document.getElementById('lightbulb');
 
 function bulbSwitch() {
-  if (lightbulb.src.match("lighton.jpeg")) {
-    lightbulb.src = "lightoff.jpeg";
+  if (lightbulb.src.match("img/lighton.jpg")) {
+    lightbulb.src = "img/lightoff.jpg";
   } else {
-    lightbulb.src = "lighton.jpeg";
+    lightbulb.src = "img/lighton.jpg";
   }
 }
 
